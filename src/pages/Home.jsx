@@ -3,6 +3,7 @@ import Card from '../fragment/Card';
 import { useDispatch, useSelector } from 'react-redux';
 import { getQuran, quranSelector } from '../slice/QuranSlice';
 import { Link } from 'react-router-dom';
+import Wavify from 'react-wavify';
 
 const Home = () => {
   const [search, setSearch] = useState('');
@@ -20,9 +21,20 @@ const Home = () => {
   return (
     <section>
       <div className="w-full">
-        <div className="py-[130px] bg-blue-600 w-full h-[400px]">
+        <div className="py-[130px] bg-blue-600 w-full h-[500px] relative">
           <h1 className="text-center text-6xl font-sans text-white mb-2">E-Quran </h1>
-          <h4 className="text-2xl mb-10 text-center text-slate-200">Membaca Al - quran dengan mudah dimanapun.</h4>
+          <h4 className="text-2xl text-center text-slate-200">Membaca Al - quran dengan mudah dimanapun.</h4>
+          <Wavify
+            className="absolute bottom-0 left-0 w-full"
+            fill="#ffffff"
+            paused={false}
+            options={{
+              height: 20,
+              amplitude: 30,
+              speed: 0.15,
+              points: 4,
+            }}
+          />
         </div>
         <div className="w-5/6 mx-auto py-[100px]">
           <input
