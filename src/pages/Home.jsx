@@ -21,7 +21,7 @@ const Home = () => {
     <section>
       <div className="w-full">
         <div className="py-[130px] bg-blue-600 w-full h-[400px]">
-          <h1 className="text-center text-6xl font-sans text-white mb-2">E Quran </h1>
+          <h1 className="text-center text-6xl font-sans text-white mb-2">E-Quran </h1>
           <h4 className="text-2xl mb-10 text-center text-slate-200">Membaca Al - quran dengan mudah dimanapun.</h4>
         </div>
         <div className="w-5/6 mx-auto py-[100px]">
